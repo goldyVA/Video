@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Steven Goldburg — Video</title>
+<meta name="description" content="Aerial and studio video work by Steven Goldburg.">
+<!-- Uses system serif/sans stacks (Georgia + system UI font) to match stevengoldburg.com's existing look with no extra font loading. -->
+
+<style>
+  :root{
+    --bg:#e8e7e4;
+    --ink:#2c2c2b;
+    --gray:#6f6f6d;
+    --gray-light:#9a9a97;
+    --line:#d6d5d1;
+    --display: Georgia, 'Times New Roman', serif;
+    --body: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+
+  html{ scroll-behavior:smooth; }
+
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--body);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{ color:inherit; text-decoration:none; }
+
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  /* ---------- NAV ---------- */
+
+  nav{
+    padding:56px 0 28px;
+    text-align:center;
+  }
+
+  .brand{
+    font-family:var(--display);
+    font-weight:400;
+    font-size:2.6rem;
+    letter-spacing:0.01em;
+    color:var(--ink);
+  }
+
+  .tagline{
+    font-family:var(--body);
+    font-weight:400;
+    font-size:0.95rem;
+    color:var(--gray);
+    letter-spacing:0.06em;
+    margin-top:6px;
+  }
+
+  .nav-links{
+    display:flex;
+    gap:36px;
+    align-items:center;
+    justify-content:center;
+    font-size:0.92rem;
+    letter-spacing:0.02em;
+    color:var(--gray);
+    margin-top:34px;
+  }
+
+  .nav-links a{ color:var(--gray); }
+  .nav-links a:hover{ color:var(--ink); }
+
+  .nav-links .back{
+    color:var(--gray-light);
+  }
+
+  .nav-links .back:hover{
+    color:var(--ink);
+  }
+
+  /* ---------- SECTION HEADERS ---------- */
+
+  .section{
+    padding:8px 0 64px;
+  }
+
+  .section-head{
+    margin-bottom:28px;
+  }
+
+  h2.section-title{
+    font-family:var(--display);
+    font-weight:400;
+    font-style:italic;
+    font-size:1.3rem;
+    color:var(--ink);
+  }
+
+  .section-note{
+    font-size:0.82rem;
+    color:var(--gray-light);
+    margin-top:4px;
+  }
+
+  /* ---------- REEL GRID ---------- */
+
+  .reel-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(260px, 1fr));
+    gap:36px 20px;
+  }
+
+  .card{
+    position:relative;
+  }
+
+  .card-frame{
+    position:relative;
+    aspect-ratio:16/10;
+    background:#d9d8d4;
+    overflow:hidden;
+  }
+
+  .card-frame.portrait{
+    aspect-ratio:9/16;
+  }
+
+  .card-frame iframe{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    border:0;
+  }
+
+  .card-frame img.poster{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    cursor:pointer;
+    transition:opacity 0.25s ease;
+  }
+
+  .card-frame:hover img.poster{
+    opacity:0.88;
+  }
+
+  .play-btn{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    pointer-events:none;
+  }
+
+  .play-btn svg{
+    width:38px;
+    height:38px;
+    opacity:0.92;
+  }
+
+  .card-meta{
+    padding-top:12px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+  }
+
+  .card-label{
+    display:flex;
+    align-items:center;
+    gap:9px;
+  }
+
+  .card-label svg{
+    width:15px;
+    height:15px;
+    flex-shrink:0;
+    color:var(--gray-light);
+  }
+
+  .card-title{
+    font-size:0.98rem;
+    color:var(--ink);
+  }
+
+  .card-duration{
+    font-size:0.82rem;
+    color:var(--gray-light);
+    white-space:nowrap;
+  }
+
+  /* ---------- FOOTER ---------- */
+
+  footer{
+    padding:60px 0 80px;
+    text-align:center;
+  }
+
+  .footer-links{
+    display:flex;
+    gap:28px;
+    justify-content:center;
+    font-size:0.9rem;
+    color:var(--gray);
+  }
+
+  .footer-links a:hover{ color:var(--ink); }
+
+  @media (max-width: 640px){
+    .section-head{ flex-direction:column; align-items:flex-start; }
+    .section-note{ text-align:left; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="brand">Steven Goldburg</div>
+  <div class="tagline">video</div>
+  <div class="nav-links">
+    <a href="#aerial">aerial</a>
+    <a href="#athletics">athletics</a>
+    <a class="back" href="https://stevengoldburg.com">photography ↗</a>
+    <a href="mailto:hello@stevengoldburg.com">contact</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section class="section" id="aerial">
+    <div class="section-head">
+      <h2 class="section-title">Aerial</h2>
+    </div>
+
+    <div class="reel-grid">
+
+      <div class="card">
+        <div class="card-frame" data-video-id="1eb8992c52fa10368bee2fb66b2bd018">
+          <img class="poster" src="https://customer-lctnm5zg5e5y6vlq.cloudflarestream.com/1eb8992c52fa10368bee2fb66b2bd018/thumbnails/thumbnail.jpg?time=&height=600" alt="Norfolk Academy Coastal Research Campus aerial still">
+          <div class="play-btn">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="30" r="29" stroke="#2c2c2b" stroke-width="1.2"/>
+              <path d="M25 20L40 30L25 40V20Z" fill="#2c2c2b"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-meta">
+          <div class="card-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" xmlns="http://www.w3.org/2000/svg"><path d="M15 10l5-3v10l-5-3M4 6h9a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2z"/></svg>
+            <span class="card-title">Norfolk Academy Coastal Research Campus</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="athletics">
+    <div class="section-head">
+      <h2 class="section-title">Athletics</h2>
+    </div>
+
+    <div class="reel-grid">
+
+      <div class="card">
+        <div class="card-frame portrait" data-video-id="52681539d68e55239eeb531bcabe97d4">
+          <img class="poster" src="https://customer-lctnm5zg5e5y6vlq.cloudflarestream.com/52681539d68e55239eeb531bcabe97d4/thumbnails/thumbnail.jpg?time=&height=600" alt="CNU Women's Lacrosse NCAA Tournament Victory still">
+          <div class="play-btn">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="30" r="29" stroke="#2c2c2b" stroke-width="1.2"/>
+              <path d="M25 20L40 30L25 40V20Z" fill="#2c2c2b"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-meta">
+          <div class="card-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" xmlns="http://www.w3.org/2000/svg"><path d="M15 10l5-3v10l-5-3M4 6h9a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2z"/></svg>
+            <span class="card-title">CNU Women's Lacrosse — NCAA Tournament Victory</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-frame portrait" data-video-id="a148805b367cc1895694779c2d459005">
+          <img class="poster" src="https://customer-lctnm5zg5e5y6vlq.cloudflarestream.com/a148805b367cc1895694779c2d459005/thumbnails/thumbnail.jpg?time=&height=600" alt="Coast Lacrosse Coaches Introductions still">
+          <div class="play-btn">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="30" r="29" stroke="#2c2c2b" stroke-width="1.2"/>
+              <path d="M25 20L40 30L25 40V20Z" fill="#2c2c2b"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-meta">
+          <div class="card-label">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" xmlns="http://www.w3.org/2000/svg"><path d="M15 10l5-3v10l-5-3M4 6h9a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2z"/></svg>
+            <span class="card-title">Coast Lacrosse — Coaches Introductions</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-links">
+      <a href="https://stevengoldburg.com">stevengoldburg.com</a>
+      <a href="mailto:hello@stevengoldburg.com">contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Click a poster to swap it for the Cloudflare Stream iframe and autoplay.
+  document.querySelectorAll('.card-frame').forEach(frame => {
+    const uid = frame.getAttribute('data-video-id');
+    frame.addEventListener('click', () => {
+      if (!uid) return;
+      frame.innerHTML = `<iframe
+        src="https://customer-lctnm5zg5e5y6vlq.cloudflarestream.com/${uid}/iframe?autoplay=true&muted=false"
+        loading="lazy"
+        allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+        allowfullscreen="true"
+      ></iframe>`;
+    });
+  });
+</script>
+
+</body>
+</html>
